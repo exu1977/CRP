@@ -90,8 +90,8 @@ env.Append(LIBS = ["boost_iostreams"])
 env.Append(LIBS = ["gomp"])
 
 # specify correct path to your boost library
-env.Append(CPPPATH = ["/usr/local/Cellar/boost/1.59.0/include"])
-env.Append(LIBPATH = ["/usr/local/Cellar/boost/1.59.0/lib"])
+# env.Append(CPPPATH = ["/usr/local/Cellar/boost/1.59.0/include"])
+# env.Append(LIBPATH = ["/usr/local/Cellar/boost/1.59.0/lib"])
 
 if GetOption("clean"):
 	if os.path.exists(".buildOpt"):
